@@ -11,7 +11,6 @@ class BankAccount {
         this.balance = initialBalance;
     }
 
-    // Deposit money
     public void deposit(double amount) {
         if (amount > 0) {
             balance += amount;
@@ -104,13 +103,11 @@ class ATM {
 
 public class AtmInterface {
     public static void main(String[] args) {
-        // Create a bank account with an initial balance
+
         BankAccount myAccount = new BankAccount(2000.0);
 
-        // Create ATM linked with that account
         ATM atm = new ATM(myAccount);
 
-        // Show ATM menu
         atm.showMenu();
     }
 }
