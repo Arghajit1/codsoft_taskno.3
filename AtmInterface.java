@@ -73,10 +73,10 @@ class ATM {
                     performCheckBalance();
                     break;
                 case 4:
-                    System.out.println("👋 Thank you for using the ATM. Goodbye!");
+                    System.out.println("Thank you for using the ATM. Goodbye!");
                     break;
                 default:
-                    System.out.println("❌ Invalid choice. Try again.");
+                    System.out.println("Invalid choice. Try again.");
             }
         } while (choice != 4);
     }
@@ -97,7 +97,7 @@ class ATM {
 
   
     private void performCheckBalance() {
-        System.out.println("💰 Current Balance: $" + account.getBalance());
+        System.out.println("Current Balance: $" + account.getBalance());
     }
 }
 
